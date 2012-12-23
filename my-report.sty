@@ -1,0 +1,22 @@
+%%% 紙面に関する設定(余白を上下左右25mmに設定)
+% 紙面の幅に関する設定
+% とりあえず紙面の幅全部を本文領域にする
+\setlength{\textwidth}{\paperwidth}
+% 左の余白を25mm(=1インチ-0.4mm)に設定
+\setlength{\oddsidemargin}{-0.4mm}
+\setlength{\evensidemargin}{\oddsidemargin}
+% 右の余白も25mmにする(=本文領域は25mm+25mm分狭くなる)
+\addtolength{\textwidth}{-50mm}
+%
+% 紙面の高さに関する設定
+% とりあえず紙面の高さ全部を本文領域にする
+\setlength{\textheight}{\paperheight}
+% 上の余白を25mm(=1インチ-0.4mm)にする
+\setlength{\topmargin}{-0.4mm}
+% ヘッダはなしにする
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+% フッタは本文から10mm下につける
+\setlength{\footskip}{10mm}
+% 下の余白は10mmにする(=本文領域は25mm+10mm+15mm分狭くなる)
+\addtolength{\textheight}{-50mm}
